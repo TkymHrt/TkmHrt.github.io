@@ -1,0 +1,75 @@
+body {
+}
+.container {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 250px 2000px;
+    grid-template-areas: 
+    "main sidebar-nav"
+    "main sidebar    ";
+}
+
+.main {
+    grid-area: main;
+    overflow-y: scroll;
+    background-color: #050231;
+    color: aliceblue;
+}
+
+.contents {
+    margin: 10rem;
+}
+.contents h2 {
+    font-size: 5rem;
+}
+
+.contents a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.flex {
+    display: flex;
+    padding: 2rem;
+    justify-content: space-between;
+}
+
+.flex p {
+    width: 50%;
+}
+
+.sidebar-nav {
+    background-color: #333333;
+    color:honeydew;
+    grid-area: sidebar-nav;
+    position: sticky;
+    top: 0px;
+    margin-top: 2px;
+    font-family: fantasy;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.sidebar-nav li {
+    border-bottom: 2px solid white;
+}
+
+.sidebar-nav a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.sidebar-nav a:hover {
+    text-decoration: none;
+    color:dodgerblue;
+}
+
+.sns-banner a {
+    color: #e1306c;
+}
+
+.sidebar {
+    background-color: #333333;
+    grid-area: sidebar;
+    overflow-y: scroll;
+}
