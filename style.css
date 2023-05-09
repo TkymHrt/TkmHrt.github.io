@@ -1,3 +1,56 @@
+.container {
+    display: flex;
+}
+
+.main {
+    background-color: #050231;
+    height: 2500px;
+}
+
+.sidebar {
+    background-color: #333333;
+    height: 2500px;
+    width: 250px;
+    
+}
+
+.nav {
+    color: aliceblue;
+    font-family: fantasy;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.nav a {
+    display: block;
+    text-decoration: none;
+    font-family: fantasy;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.nav a:hover {
+    text-decoration: none;
+    color:dodgerblue;
+}
+
+.content-nav {
+    color:honeydew;
+    margin: 0 0 -3px;
+    border-top: solid 3px;
+    border-bottom: solid 3px;
+}
+
+.sns-nav {
+    color: #e1306c;
+
+}
+
+.sns-bar {
+
+}
+
+
 /* body {
 }
 .container {
