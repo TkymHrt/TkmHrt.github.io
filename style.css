@@ -1,3 +1,6 @@
+.body {
+}
+
 .container {
     display: flex;
 }
@@ -11,11 +14,10 @@
     background-color: #333333;
     height: 2500px;
     width: 250px;
-    
 }
 
 .nav {
-    color: aliceblue;
+    color:honeydew;
     font-family: fantasy;
     font-size: 2rem;
     text-align: center;
@@ -29,27 +31,30 @@
     text-align: center;
 }
 
+.nav li {
+    margin: 0 0 -3px;
+    border-top: solid 3px;
+    border-bottom: solid 3px;
+    border-color: aliceblue;
+}
+
 .nav a:hover {
     text-decoration: none;
     color:dodgerblue;
 }
 
 .content-nav {
-    color:honeydew;
-    margin: 0 0 -3px;
-    border-top: solid 3px;
-    border-bottom: solid 3px;
+    color:aliceblue;
 }
 
 .sns-nav {
     color: #e1306c;
-
 }
 
-.sns-bar {
-
+.introduction {
+    display: flex;
+    color: aliceblue;
 }
-
 
 /* body {
 }
