@@ -7,13 +7,17 @@
 
 .main {
     background-color: #050231;
-    height: 2500px;
+    width: calc(100% - 250px
+    );
+    height: 2800px;
 }
 
 .sidebar {
     background-color: #333333;
-    height: 2500px;
+    height: 2800px;
     width: 250px;
+    position: fixed;
+    right: 0px;
 }
 
 .nav {
@@ -55,6 +59,10 @@
     color: aliceblue;
 }
 
+.introduction h2 {
+    margin-top: 200px;
+}
+
 .title {
     text-align: center;
     font-size: 4rem;
@@ -65,10 +73,31 @@
     display: flex;
     color: aliceblue;
     justify-content: center;
-    gap: 60px
-    ;
+    gap: 60px;
 }
 
+form input, form textarea {
+    display: block;
+    width: 800px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+form textarea {
+    height: 200px;
+}
 
 /* body {
 }
