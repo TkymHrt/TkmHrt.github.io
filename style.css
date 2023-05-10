@@ -7,14 +7,14 @@
 
 .main {
     background-color: #050231;
-    width: calc(100% - 250px);
+    width: calc(100% - 300px);
     height: 2800px;
 }
 
 .sidebar {
     background-color: #333333;
     height: 2800px;
-    width: 250px;
+    width: 300px;
     position: fixed;
     right: 0px;
 }
@@ -52,6 +52,18 @@
 
 .sns-nav {
     color: #e1306c;
+}
+
+.sns-bar {
+    height: 100vh;
+    overflow: auto;
+    -ms-text-overflow: none;
+    scrollbar-width: none;
+    
+}
+
+.sns-bar::-webkit-scrollbar {
+    display: none;
 }
 
 .introduction {
