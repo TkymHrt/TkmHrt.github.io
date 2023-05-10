@@ -88,6 +88,46 @@
     gap: 60px;
 }
 
+.content-main-education {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: fit-content;
+    gap: 10px;
+    margin: 0 auto;
+}
+
+.content-main-education p {
+    margin: 15px;
+}
+
+.hr-education {
+    width: 100%;
+}
+
+.item-index {
+    display: flex;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.item-index-width {
+    width: 150px;
+}
+
+.item-index-width p {
+    margin-left: auto;
+    width: fit-content;
+}
+
+
+
 form input, form textarea {
     display: block;
     width: 800px;
