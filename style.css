@@ -1,82 +1,96 @@
-body {
+.body {
 }
+
 .container {
-    display: grid;
-    grid-template-columns: 4fr 1fr;
-    grid-template-rows: 250px 2000px;
-    grid-template-areas: 
-    "main sidebar-nav"
-    "main sidebar    ";
+    display: flex;
 }
 
 .main {
-    grid-area: main;
-    overflow-y: scroll;
     background-color: #050231;
-    color: aliceblue;
+    width: calc(100% - 300px);
+    height: 2800px;
 }
 
-.contents {
-    margin: 10rem;
-}
-.contents h2 {
-    font-size: 5rem;
-}
-
-.contents a {
-    text-decoration: none;
-    color: aliceblue;
-}
-
-.flex {
-    display: flex;
-    padding: 2rem;
-    justify-content: space-between;
-}
-
-.flex p {
-    width: 50%;
-}
-
-.sidebar-nav {
+.sidebar {
     background-color: #333333;
+    height: 2800px;
+    width: 300px;
+    position: fixed;
+    right: 0px;
+}
+
+.nav {
     color:honeydew;
-    grid-area: sidebar-nav;
-    position: sticky;
-    top: 0px;
-    margin-top: 2px;
     font-family: fantasy;
     font-size: 2rem;
     text-align: center;
 }
 
-.sidebar-nav li {
-    border-bottom: 2px solid white;
-}
-
-.sidebar-nav a {
+.nav a {
+    display: block;
     text-decoration: none;
-    color: aliceblue;
+    font-family: fantasy;
+    font-size: 2rem;
+    text-align: center;
 }
 
-.sidebar-nav a:hover {
+.nav li {
+    margin: 0 0 -3px;
+    border-top: solid 3px;
+    border-bottom: solid 3px;
+    border-color: aliceblue;
+}
+
+.nav a:hover {
     text-decoration: none;
     color:dodgerblue;
 }
 
-.sns-banner a {
+.content-nav {
+    color:aliceblue;
+}
+
+.sns-nav {
     color: #e1306c;
 }
 
-.sidebar {
+.sns-bar {
+    height: 100vh;
+    overflow: auto;
+    -ms-text-overflow: none;
+    scrollbar-width: none;
+    
+}
+
+.sns-bar::-webkit-scrollbar {
+    display: none;
+}
+
+.introduction {
+    color: aliceblue;
+}
+
+.introduction h2 {
+    margin-top: 200px;
+}
+
+.title {
+    text-align: center;
+    font-size: 5rem;
+    margin-bottom: 2rem;
     background-color: #333333;
-    grid-area: sidebar;
-    overflow-y: scroll;
+}
+
+.content-main {
+    display: flex;
+    color: aliceblue;
+    justify-content: center;
+    gap: 60px;
 }
 
 form input, form textarea {
     display: block;
-    width: 100%;
+    width: 800px;
     padding: 10px;
     margin-bottom: 10px;
     border: none;
@@ -96,7 +110,3 @@ form input[type="submit"]:hover {
 form textarea {
     height: 200px;
 }
-
-/* @media screen and (max-width: 700px) {
-    
-} */
