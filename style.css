@@ -150,3 +150,96 @@ form input[type="submit"]:hover {
 form textarea {
     height: 200px;
 }
+
+#floatingMenu {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    z-index: 2;
+}
+
+.flObj {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: baseline;
+    justify-content: flex-end;
+    gap: 15px;
+    transition: all 0.05s ease;
+    position: relative;
+}
+
+.flObj p {
+    margin: 0;
+    background: #FFF;
+    padding: 6px 20px 6px;
+    font-size: 0.85rem;
+    box-shadow: 0 0 3px 0 rgb(0 0 0 / 22%), 0 0 3px 0 rgb(0 0 0 / 22%), 0 0 3px 0 rgb(0 0 0 / 22%);
+    border-radius: 4px;
+}
+
+.flObj a {
+    background: #365879;
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9999px;
+    position: relative;
+    font-size: 1.2rem;
+}
+
+.flObj.first a:hover, .flObj.second a:hover, .flObj.third a:hover {
+    opacity: 0.8;
+}
+
+.flObj.first a {
+    background-image: url(./image/instagramIcon.png);
+    background-size: cover;
+}
+
+.flObj.second a {
+    background-image: url(./image/twitterIcon.png);
+    background-size: cover;
+}
+
+.flObj.third a {
+    background-image: url(./image/githubIcon.png);
+    background-size: cover;
+}
+
+.flObj a i {
+    color: #FFF;
+}
+
+.flObj.bottom a::before {
+    content: "\f068";
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Font Awesome 5 Free" !important;
+    font-weight: 900;
+    color: #FFF;
+}
+
+#floatingMenu.notshow {
+    gap: 0;
+}
+
+div#floatingMenu.notshow > .flObj.first, div#floatingMenu.notshow > .flObj.second, div#floatingMenu.notshow > .flObj.third {
+    gap: 0;
+    margin-bottom: -58px;
+}
+
+div#floatingMenu.notshow > .flObj.first p, div#floatingMenu.notshow > .flObj.second p, div#floatingMenu.notshow > .flObj.third p {
+    display: none;
+}
+
+div#floatingMenu.notshow .flObj.bottom a::before {
+    content: "\f067";
+}
