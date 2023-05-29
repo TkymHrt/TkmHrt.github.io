@@ -250,7 +250,7 @@ div#floatingMenu.notshow .flObj.bottom a::before {
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background-color: #40456e;
+    background-color: #ffbe8a;
     transition: all 1s;
     position: fixed;
     top: 0;
